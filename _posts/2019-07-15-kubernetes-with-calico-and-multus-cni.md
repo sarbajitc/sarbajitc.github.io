@@ -95,6 +95,7 @@ here the subnet range is matching the VirtualBox 2nd host-only adapter subnet.
 
 ### Launch a pod with multus macvlam profile
 * Execute following command in master -
+
 ```bash
 cat <<EOF | kubectl create -f -
 apiVersion: v1
