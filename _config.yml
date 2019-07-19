@@ -1,0 +1,12 @@
+remote_theme: thelehhman/plainwhite-jekyll
+
+plainwhite:
+  name: Sarbajit Chatterjee
+  tagline: Developing cloud, container networking software
+  date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: sarbajitc
+    github:  sarbajitc
+    linkedIn: in/sarbajit-chatterjee-b8a75010 # format: locale/username
+    
