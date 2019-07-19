@@ -20,7 +20,7 @@ Steps to setup a devstack (stein) single node setup with OpenDaylight controller
 12. `cd devstack`
 Create `local.conf` file with following content -
 
-{% highlight ini %}
+```ini
 [[local|localrc]]
 # This will fetch the latest ODL snapshot
 ODL_RELEASE=oxygen-latest
@@ -134,4 +134,4 @@ DATABASE_QUERY_LOGGING=True
 EBTABLES_RACE_FIX=True
 
 enable_plugin networking-odl https://git.openstack.org/openstack/networking-odl
-{% endhighlight %}
+```
