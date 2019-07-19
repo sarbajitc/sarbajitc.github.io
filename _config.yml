@@ -2,7 +2,7 @@ remote_theme: thelehhman/plainwhite-jekyll
 
 plainwhite:
   name: Sarbajit Chatterjee
-  tagline: Developing cloud, container networking software
+  tagline: Developer at heart 
   date_format: "%b %-d, %Y"
 
   social_links:
