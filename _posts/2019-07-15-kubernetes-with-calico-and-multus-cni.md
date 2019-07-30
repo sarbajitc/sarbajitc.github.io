@@ -57,6 +57,9 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ### Install primary CNI plugin (calico)
 * On master node execute `kubectl apply -f https://docs.projectcalico.org/v3.8/manifests/calico.yaml` which will setup [calico 3.8](https://docs.projectcalico.org/v3.8/getting-started/kubernetes/)
 * Verify calico pods are in running state using command `kubectl get pods -o wide --all-namespaces`
+* Optional: setup `calicoctl` tool for debugging calico
+  * Downlload calicoctl binary `curl -O -L  https://github.com/projectcalico/calicoctl/releases/download/v3.8.1/calicoctl`
+  * Set executable permission `chmod +x calicoctl`
 
 ### Install Multus CNI plugin
 * On master node execute `kubectl apply -f https://raw.githubusercontent.com/intel/multus-cni/master/images/multus-daemonset.yml` which will setup [Multus](https://github.com/intel/multus-cni/). Multus takes over as main CNI plugin and uses calico as default network plugin.
