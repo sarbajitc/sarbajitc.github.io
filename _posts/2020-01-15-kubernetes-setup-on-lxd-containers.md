@@ -24,7 +24,7 @@ LXD is a container manager in Linux. It provides VM like experiences using lxc c
 
 ### Installing kubernetes on lxc containers (using kubeadm)
 * Before kubernetes can be installed, there are following tweaks necessare in every lxc container created before -
-  * From the VM shell run `lxc config edit master` and add following in config section -
+  * From the VM shell run e.g. `lxc config edit master` and add following in config section -
   ```yaml
   config:
     linux.kernel_modules: ip_tables,ip6_tables,netlink_diag,nf_nat,overlay,ip_vs,ip_vs_rr,ip_vs_wrr,ip_vs_sh,xt_conntrack,br_netfilter
@@ -69,4 +69,4 @@ LXD is a container manager in Linux. It provides VM like experiences using lxc c
   * After CNI plugin is installed, cluster will become ready
   
   
-  *P.S. Kubernetes cluster does not come up after rebooting the VM or the lxc containers*
+  *P.S. Kubernetes cluster goes into bad state after rebooting the VM or the lxc containers*
