@@ -1,5 +1,8 @@
 remote_theme: samarsault/plainwhite-jekyll
 
+sass:
+  sass_dir: _sass
+
 plainwhite:
   name: Sarbajit Chatterjee
   tagline: Developer at heart 
@@ -18,3 +21,6 @@ plainwhite:
     twitter: sarbajitc
     github:  sarbajitc
     linkedIn: in/sarbajit-chatterjee-b8a75010 # format: locale/username
+
+plugins:
+  - jekyll-seo-tag
