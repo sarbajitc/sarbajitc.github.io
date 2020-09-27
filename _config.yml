@@ -18,4 +18,5 @@ plainwhite:
     twitter: sarbajitc
     github:  sarbajitc
     linkedIn: in/sarbajit-chatterjee-b8a75010 # format: locale/username
-    
+plugins:
+  - jekyll-seo-tag
