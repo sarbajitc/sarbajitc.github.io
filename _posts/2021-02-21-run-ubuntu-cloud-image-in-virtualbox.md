@@ -40,7 +40,9 @@ This step requires you to have a Linux machine with `genisoimage` tool. It is in
 
 ### Generate ISO image
 Run the following command from *seed-iso* directory created above -
-```genisoimage  -output seed.iso -volid cidata -joliet -rock user-data meta-data```
+```
+genisoimage  -output seed.iso -volid cidata -joliet -rock user-data meta-data
+```
 It will create **seed.iso** file in the same directory. Export this ISO file to the host where Virtualbox is installed.
 
 ### Load OVA image in Virtualbox
@@ -49,7 +51,9 @@ Open the OVA image, downloaded before, from Virtualbox and import. Once imported
 Next to load the seed.iso, open VM Settings, go to Storage, Controller IDE and Add a Optical Drive. Browse the seed.iso.
 
 If you want to enable Nested Virtualization for the VM and the option is greyed out in GUI, run following command -
-```VBoxManage modifyvm vm-name --nested-hw-virt on```
+```
+VBoxManage modifyvm vm-name --nested-hw-virt on
+```
 
 Then start the VM and you can login to the VM using default user **ubuntu** and the password you have set in user-data file.
 
