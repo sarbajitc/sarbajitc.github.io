@@ -50,7 +50,9 @@ Open the OVA image, downloaded before, from Virtualbox and import. Once imported
 
 Next to load the seed.iso, open VM Settings, go to Storage, Controller IDE and Add a Optical Drive. Browse the seed.iso.
 
-If you want to enable Nested Virtualization for the VM and the option is greyed out in GUI, run following command -
+By default the VM disk size is 10 GB. But it can be increased by going to File, Virtual Media Manager, Selecting the disk and updating the Size attribute.
+
+If you want to enable Nested Virtualization for the VM and the option is greyed out in GUI (generally happens for Intel processors), run following command -
 ```
 VBoxManage modifyvm vm-name --nested-hw-virt on
 ```
